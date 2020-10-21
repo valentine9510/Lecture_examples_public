@@ -1,0 +1,12 @@
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/bin/Debug/netcoreapp3.1/SemaphoreFullException.deps.json
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/bin/Debug/netcoreapp3.1/SemaphoreFullException.runtimeconfig.json
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/bin/Debug/netcoreapp3.1/SemaphoreFullException.runtimeconfig.dev.json
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/bin/Debug/netcoreapp3.1/SemaphoreFullException.dll
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/bin/Debug/netcoreapp3.1/SemaphoreFullException.pdb
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/obj/Debug/netcoreapp3.1/SemaphoreFullException.csprojAssemblyReference.cache
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/obj/Debug/netcoreapp3.1/SemaphoreFullException.AssemblyInfoInputs.cache
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/obj/Debug/netcoreapp3.1/SemaphoreFullException.AssemblyInfo.cs
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/obj/Debug/netcoreapp3.1/SemaphoreFullException.csproj.CoreCompileInputs.cache
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/obj/Debug/netcoreapp3.1/SemaphoreFullException.dll
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/obj/Debug/netcoreapp3.1/SemaphoreFullException.pdb
+/Users/ali/github/csharp/Lecture_examples_public/L13/SemaphoreFullException/obj/Debug/netcoreapp3.1/SemaphoreFullException.genruntimeconfig.cache
