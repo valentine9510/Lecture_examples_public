@@ -13,6 +13,7 @@ namespace InterlockedExchange_Example
 
         static void Main()
         {
+            Console.WriteLine("Main Started here");
             Thread myThread;
             Random rnd = new Random();
 

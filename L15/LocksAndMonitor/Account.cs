@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace LocksAndMonitor
 {
@@ -27,8 +23,7 @@ namespace LocksAndMonitor
             Monitor.Enter(LockA);
             try
             {
-                //lock (LockA)
-                //{
+                
                 if (balance >= amount)
                 {
                     Console.WriteLine("Amount drawn: " + amount);
@@ -41,8 +36,21 @@ namespace LocksAndMonitor
             {
                 Monitor.Exit(LockA);
             }
-            return 0;
+
+
+            //lock (LockA)
+            //{
+            //    if (balance >= amount)
+            //    {
+            //        Console.WriteLine("Amount drawn: " + amount);
+            //        balance = balance - amount;
+
+            //        return balance;
+            //    }
             //}
+
+            return 0;
+           
         }
 
         public void WithdrawRandomly()

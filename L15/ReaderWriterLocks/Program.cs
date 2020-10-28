@@ -27,6 +27,7 @@ namespace ReaderWriterlocks
                 readerWriterLockSlim.EnterReadLock();
                 Thread.Sleep(50);
                 readerWriterLockSlim.ExitReadLock();
+                Console.WriteLine("Read Lock Exited");
             }
         }
 
@@ -41,7 +42,7 @@ namespace ReaderWriterlocks
                 persons.Add(id, person);
                 readerWriterLockSlim.ExitWriteLock();
                 Console.WriteLine(user + " added " + person);
-                Thread.Sleep(250);
+                Thread.Sleep(2000);
             }
         }
 

@@ -13,13 +13,6 @@ public class Example
     //
     private static long threadCount = 0;
 
-    // An AutoReset event that allows the main thread to block
-    // until an exiting thread has decremented the count.
-    //
-    private static EventWaitHandle clearCount =
-        new EventWaitHandle(false, EventResetMode.ManualReset);
-
-    [MTAThread]
     public static void Main()
     {
         
@@ -67,12 +60,5 @@ public class Example
         Console.WriteLine("Thread {0} exits.", data);
         // Decrement the count of blocked threads.
         Interlocked.Decrement(ref threadCount);
-
-        // After signaling ewh, the main thread blocks on
-        // clearCount until the signaled thread has 
-        // decremented the count. Signal it now.
-        //
-        clearCount.Set();
-        Console.WriteLine("threadCount:{0}", Interlocked.Read(ref threadCount));
     }
 }
