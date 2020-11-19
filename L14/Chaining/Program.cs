@@ -12,11 +12,11 @@ namespace TaskChaining
                 Task.Delay(2000);
                 return DateTime.Today.ToShortDateString();
             });
+
             Task<string> continuation = antecedent.ContinueWith(x =>
             {
                 return "Today is " + antecedent.Result;
             });
-            Console.WriteLine("This will display before the result");
             Console.WriteLine(continuation.Result);
         }
     }

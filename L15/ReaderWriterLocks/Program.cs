@@ -12,11 +12,13 @@ namespace ReaderWriterlocks
         static Random random = new Random();
         static void Main(string[] args)
         {
+            Console.WriteLine("****Main starts here");
             var task1 = Task.Factory.StartNew(Read);
-            var task2 = Task.Factory.StartNew(Write, "Write A");
-            var task3 = Task.Factory.StartNew(Write, "Write B");
             var task4 = Task.Factory.StartNew(Read);
             var task5 = Task.Factory.StartNew(Read);
+            var task2 = Task.Factory.StartNew(Write, "Write A");
+            var task3 = Task.Factory.StartNew(Write, "Write B");
+            
             Task.WaitAll(task1, task2, task3, task4, task5);
         }
 
@@ -39,10 +41,11 @@ namespace ReaderWriterlocks
                 int id = GetRandom();
                 readerWriterLockSlim.EnterWriteLock();
                 var person = "Person " + i;
+                Thread.Sleep(500);
                 persons.Add(id, person);
                 readerWriterLockSlim.ExitWriteLock();
                 Console.WriteLine(user + " added " + person);
-                Thread.Sleep(2000);
+                
             }
         }
 

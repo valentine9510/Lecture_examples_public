@@ -23,7 +23,7 @@ namespace LocksAndMonitor
             Monitor.Enter(LockA);
             try
             {
-                
+
                 if (balance >= amount)
                 {
                     Console.WriteLine("Amount drawn: " + amount);
@@ -55,7 +55,7 @@ namespace LocksAndMonitor
 
         public void WithdrawRandomly()
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 10; i++)
             {
                 var balance = Withdraw(random.Next(2000, 5000));
                 if (balance > 0)

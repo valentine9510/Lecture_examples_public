@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueT", "QueueT.csproj", "{BA78B2B5-D5EB-40D5-A6BB-8BC8100F228F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA78B2B5-D5EB-40D5-A6BB-8BC8100F228F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA78B2B5-D5EB-40D5-A6BB-8BC8100F228F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA78B2B5-D5EB-40D5-A6BB-8BC8100F228F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA78B2B5-D5EB-40D5-A6BB-8BC8100F228F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
