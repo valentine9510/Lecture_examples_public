@@ -10,7 +10,7 @@ public class Example
     public static void Main()
     {
         Console.WriteLine("***Example 2 starts***");
-        semaphore = new SemaphoreSlim(1,3);
+        semaphore = new SemaphoreSlim(0,3);
         Console.WriteLine("{0} tasks can enter the semaphore.",
                           semaphore.CurrentCount);
         Task[] tasks = new Task[5];
