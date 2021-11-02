@@ -9,7 +9,7 @@ namespace MyProcess
         {
             using Process myProcess = new Process();
             myProcess.StartInfo.UseShellExecute = false;
-            myProcess.StartInfo.FileName = "/Users/ali/github/csharp/Lecture_examples/L4/hello_world.sh";
+            myProcess.StartInfo.FileName = "C:\\Users\\hp\\Documents\\Valentine\\Class\\Year 4\\Semester 1\\CPEN 333\\Lecture examples\\Lecture_examples_public\\L4\\hello_world.sh";
             myProcess.StartInfo.CreateNoWindow = true;
             myProcess.Start();
         }

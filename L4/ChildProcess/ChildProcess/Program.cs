@@ -9,7 +9,7 @@ namespace ChildProcessInTheSameConsole
         {
             var processInfo = new ProcessStartInfo
             {
-                FileName = "/Users/ali/github/csharp/Lecture_examples/L4/hello_world.sh",
+                FileName = ".\\..\\..\\..\\..\\..\\hello_world.sh",
             };
 
             Console.WriteLine("Starting a process...");
