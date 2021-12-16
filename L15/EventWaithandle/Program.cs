@@ -61,6 +61,18 @@ public class Example
             // before looping again.
             //
             WaitHandle.SignalAndWait(ewh, clearCount);
+            /*
+             public static bool SignalAndWait (System.Threading.WaitHandle toSignal, System.Threading.WaitHandle toWaitOn);
+
+            Parameters
+            toSignal
+            WaitHandle
+            The WaitHandle to signal.
+
+            toWaitOn
+            WaitHandle
+            The WaitHandle to wait on.
+             */
         }
         Console.WriteLine();
 

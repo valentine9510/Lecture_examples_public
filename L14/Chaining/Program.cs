@@ -17,7 +17,18 @@ namespace TaskChaining
             {
                 return "Today is " + antecedent.Result;
             });
-            Console.WriteLine(continuation.Result);
+
+            Task<int> continuation2 = continuation.ContinueWith(x => printFunction());
+
+            Console.WriteLine("I added this, " + continuation.Result);
+            Console.WriteLine(continuation2.Result);
+        }
+
+        static int printFunction()
+        {
+            Console.WriteLine(" Testing Void function ");
+
+            return 1000;
         }
     }
 }

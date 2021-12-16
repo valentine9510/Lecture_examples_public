@@ -18,6 +18,7 @@ class Program
         var t2 = Task.Factory.StartNew(() => ConsumeTasks());
         var t3 = Task.Factory.StartNew(() => ConsumeTasks());
         Task.WaitAll(t1, t2, t3);
+        Console.WriteLine("_________FINISHED__________");
         Console.ReadLine();
     }
 
@@ -37,7 +38,7 @@ class Program
     public static void ProduceTasks()
     {
         Random random = new Random();
-        for (int i = 1; i <= 1; i++)
+        for (int i = 1; i <= 10; i++)
         {
             var queue = new QueuedObject
             {
@@ -70,8 +71,8 @@ class Program
 
     public static void ConsumeTasks()
     {
-        //QueueService.Dequeue();
-        ConcurrentQueueService.Dequeue();
+        QueueService.Dequeue();
+        //ConcurrentQueueService.Dequeue();
     }
 
 

@@ -50,7 +50,7 @@ class CQ_EnqueueDequeuePeek
 
         /***** Method 1 to Start 4 concurrent Consuming Action ***/
         //Start 4 concurrent consuming actions.
-        Parallel.Invoke(action, action, action, action);
+        //Parallel.Invoke(action, action, action, action);
 
         /***** Method 2 to Start 4 concurrent Consuming Action ***/
         //var task1 = Task.Factory.StartNew(action);
@@ -63,19 +63,19 @@ class CQ_EnqueueDequeuePeek
         //task4.Wait();
 
         /***** Method 3 to Start 4 concurrent Consuming Action ***/
-        //Task task1 = new Task(action);
-        //task1.Start();
-        //Task task2 = new Task(action);
-        //task2.Start();
-        //Task task3 = new Task(action);
-        //task3.Start();
-        //Task task4 = new Task(action);
-        //task4.Start();
+        Task task1 = new Task(action);
+        task1.Start();
+        Task task2 = new Task(action);
+        task2.Start();
+        Task task3 = new Task(action);
+        task3.Start();
+        Task task4 = new Task(action);
+        task4.Start();
 
-        //task1.Wait();
-        //task2.Wait();
-        //task3.Wait();
-        //task4.Wait();
+        task1.Wait();
+        task2.Wait();
+        task3.Wait();
+        task4.Wait();
 
 
         Console.WriteLine("outerSum = {0}, should be 49995000", outerSum);

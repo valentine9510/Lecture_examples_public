@@ -6,7 +6,7 @@ class Example
 {
     static void Main()
     {
-        Action<object> action = (object obj) =>
+        Action<object> action = (object obj) => /* Lambda expression */
         {
             Console.WriteLine("Task={0}, obj={1}, Thread={2}",
             Task.CurrentId, obj,

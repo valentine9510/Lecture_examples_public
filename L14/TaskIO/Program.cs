@@ -11,13 +11,13 @@ namespace TasksIo
             //Task<string> task = new Task<string>(() => GetPosts("https://jsonplaceholder.typicode.com/posts"));
             //task.Start();
             Task<string> task = Task.Factory.StartNew<string>
-                (() => GetPosts("https://jsonplaceholder.typicode.com/posts"));
+                (() => GetPosts("https://jsonplaceholder.typicode.com/users"));
 
             SomethingElse();
 
             try
             {
-                //task.Wait();
+                task.Wait();
                 Console.WriteLine(task.Result);
             }
             catch (AggregateException ex)
@@ -30,6 +30,7 @@ namespace TasksIo
         private static void SomethingElse()
         {
             //Implementation of a function that does something completely unrelated to the other Task 
+            Console.WriteLine(" Something else");
         }
 
         private static string GetPosts(string url)
